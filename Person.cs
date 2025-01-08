@@ -30,7 +30,7 @@ namespace People
             {
                 TMB = 88.362f + (13.397f * weight) + (4.799f * height) - (5.677f * age);
             }
-            else 
+            else
             {
                 TMB = 447.593f + (9.247f * weight) + (3.098f * height) - (4.330f * age);
             }
@@ -44,7 +44,9 @@ namespace People
 
         void showStatus()
         {
-            Console.WriteLine("Weight: " + Person.Weight);
+            Console.WriteLine($"Weight: {Weight:F2} kg");
+            Console.WriteLine($"Height: {Height:F2} cm");
+            Console.WriteLine($"TMB (Basal Metabolic Rate): {TMB} kcal/day");
         }
     }
 }
