@@ -25,7 +25,7 @@ namespace DietBase
 
             foreach (var food in foods)
             {
-                Console.WriteLine($"Carregado: {food.NameOfFood} - Energia: {food.Energy} kcal");
+                Console.WriteLine($"Id: {food.Id} - Alimento: {food.NameOfFood} - Energia: {food.Energy} kcal");
             }
 
             return foods;

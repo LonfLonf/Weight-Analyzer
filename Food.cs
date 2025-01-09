@@ -22,6 +22,7 @@ namespace FoodBase
     {
         public FoodMap()
         {   
+            Map(m => m.Id).Name("Id");
             Map(m => m.NameOfFood).Name("Alimento");
             Map(m => m.Humidity).Name("Umidade");
             Map(m => m.Energy).Name("Energia"); 
@@ -35,5 +36,5 @@ namespace FoodBase
         }
     }
 
-    // Testando 
+    // Testando a classe Food
 }

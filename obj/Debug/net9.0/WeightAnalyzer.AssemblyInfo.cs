@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WeightAnalyzer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb5fa1035d1d38acfcdf6f4656c82a224432dce0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79046e070272d27f91ec5da00b8176d176816115")]
 [assembly: System.Reflection.AssemblyProductAttribute("WeightAnalyzer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WeightAnalyzer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
