@@ -9,10 +9,12 @@ namespace People
         public int Age { get; private set; }
         public float Weight { get; private set; }
         public float Height { get; private set; }
+        public float IMC { get; private set; }
         private float measureStomach { get; set; }
         private float measureArm { get; set; }
         private float measureLeg { get; set; }
         private float TMB { get; set; }
+        
 
         public Person(string name, string sex, int age, float weight, float height)
         {
@@ -21,6 +23,7 @@ namespace People
             Age = age;
             Weight = weight;
             Height = height;
+            IMC = calculateIMC();
         }
 
         float calculateTMB(string sex, int age, float weight, float height)
@@ -35,6 +38,12 @@ namespace People
                 TMB = 447.593f + (9.247f * weight) + (3.098f * height) - (4.330f * age);
             }
             return TMB;
+        }
+
+        public float calculateIMC()
+        {
+            IMC = Weight / (Height * Height);
+            return IMC;
         }
 
         static void howManyKcal()
