@@ -16,13 +16,13 @@ namespace Activities
         public float[] MET { get; set; } = { 3.5f, 6.0f, 4.0f, 16.0f, 6.0f, 8.3f, 10.5f,
         6.0f, 8.0f, 10.0f, 8.0f, 6.5f, 8.0f, 5.5f, 3.0f, 2.5f, 2.3f, 3.3f };
 
-        float calculateMET(int choice, float kg, int minutes)
+        public float calculateMET(int choice, float kg, int minutes)
         {
             float kcalPerMinute = MET[choice] * kg * 0.0175f;
             return kcalPerMinute * minutes;
         }
 
-        void showMetTable()
+        public void showMetTable()
         {
             int limit = Math.Min(Activities.Length, MET.Length);
             for (int i = 0; i < limit; i++)

@@ -7,6 +7,7 @@ namespace FoodBase
     {
         public int Id { get; set; }
         public string NameOfFood { get; set; }
+        public int Quantity { get; set; } = 1;
         public float Humidity { get; set; }
         public int Energy { get; set; }
         public float Protein { get; set; }

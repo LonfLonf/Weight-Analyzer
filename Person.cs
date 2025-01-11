@@ -24,6 +24,7 @@ namespace People
             Weight = weight;
             Height = height;
             IMC = calculateIMC();
+            TMB = calculateTMB(sex, age, weight, height);
         }
 
         float calculateTMB(string sex, int age, float weight, float height)
@@ -42,20 +43,22 @@ namespace People
 
         public float calculateIMC()
         {
-            IMC = Weight / (Height * Height);
+            float newHeight = Height / 100;
+            IMC = Weight / (newHeight * newHeight);
             return IMC;
         }
 
-        static void howManyKcal()
+        public void howManyKcal()
         {
             Console.WriteLine("To eliminate 1KG fat you need eliminate 7.000Kcal.");
         }
 
-        void showStatus()
+        public void showStatus()
         {
             Console.WriteLine($"Weight: {Weight:F2} kg");
             Console.WriteLine($"Height: {Height:F2} cm");
-            Console.WriteLine($"TMB (Basal Metabolic Rate): {TMB} kcal/day");
+            Console.WriteLine($"TMB (Basal Metabolic Rate): {TMB:F2} kcal/day");
+            Console.WriteLine($"IMC: {IMC:F2}");
         }
     }
 }
